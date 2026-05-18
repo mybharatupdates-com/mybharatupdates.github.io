@@ -1,1 +1,241 @@
 
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bharat Updates | Latest Hindi News & Updates</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Header Style */
+        header {
+            background-color: #e31e24;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        header p {
+            font-size: 14px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #111;
+            overflow-x: auto;
+            white-space: nowrap;
+            display: flex;
+            padding: 5px 0;
+        }
+        nav a {
+            display: inline-block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        nav a:hover, nav a.active {
+            background-color: #e31e24;
+            border-radius: 4px;
+        }
+
+        /* Breaking News Ticker */
+        .breaking-news {
+            background-color: #fff;
+            border-bottom: 2px solid #e31e24;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .breaking-title {
+            background-color: #e31e24;
+            color: white;
+            padding: 5px 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 10px;
+            border-radius: 3px;
+            animation: blink 1.5s infinite;
+        }
+        .breaking-text {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-size: 20px;
+            color: #111;
+            border-left: 5px solid #e31e24;
+            padding-left: 10px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* News Grid Layout */
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        /* News Card Style */
+        .news-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+        .news-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        /* 📸 फ़ोटो को सुंदर सेट करने के लिए नया CSS */
+        .news-img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover; /* इससे फ़ोटो बिना खिंचे एकदम परफेक्ट फिट बैठती है */
+            display: block;
+            background-color: #ddd;
+        }
+        
+        .news-content {
+            padding: 15px;
+        }
+        .news-tag {
+            background-color: #f4f6f9;
+            color: #e31e24;
+            font-size: 12px;
+            padding: 3px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .news-title {
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.4;
+            color: #111;
+            margin-bottom: 10px;
+        }
+        .news-desc {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Bharat Updates</h1>
+        <p>भारत की ताज़ा ख़बरें और सटीक अपडेट्स</p>
+    </header>
+
+    <nav>
+        <a href="#" class="active">होम</a>
+        <a href="#">सरकारी नौकरी</a>
+        <a href="#">पश्चिम बंगाल</a>
+        <a href="#">बिहार न्यूज़</a>
+        <a href="#">मनोरंजन</a>
+        <a href="#">टेक्नोलॉजी</a>
+    </nav>
+
+    <div class="breaking-news">
+        <span class="breaking-title">Breaking</span>
+        <div class="breaking-text">
+            <marquee scrollamount="5" behavior="scroll" direction="left">
+                🔥 रेलवे भर्ती परीक्षा (ALP) को लेकर बड़ी अपडेट, यहाँ देखें पूरी जानकारी... | 📱 भारत में लॉन्च हुआ नया 5G स्मार्टफोन, कीमत आपके बजट में... | 📢 बोर्ड परीक्षा के नतीजे इस हफ्ते हो सकते हैं घोषित...
+            </marquee>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="section-title">मुख्य समाचार (Latest Updates)</div>
+        
+        <div class="news-grid">
+            
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1532105956626-9569c0d45a57?w=500" alt="Railway" class="news-img">
+                <div class="news-content">
+                    <span class="news-tag">सरकारी नौकरी</span>
+                    <div class="news-title">रेलवे भर्ती परीक्षा 2026: जानिए कब होगी CBT 1 परीक्षा और क्या है नया सिलेबस</div>
+                    <p class="news-desc">अगर आप भी रेलवे परीक्षा की तैयारी कर रहे हैं, तो आपके लिए बड़ी खबर है। विभाग ने परीक्षा की तारीखों को लेकर नया नोटिफिकेशन जारी किया है...</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=500" alt="Digital Portal" class="news-img">
+                <div class="news-content">
+                    <span class="news-tag">पश्चिम बंगाल</span>
+                    <div class="news-title">पश्चिम बंगाल में डिजिटल सर्टिफिकेट डाउनलोड करना हुआ आसान, सरकार ने लॉन्च किया नया पोर्टल</div>
+                    <p class="news-desc">अब राज्य के नागरिकों को जाति, निवास या आय प्रमाण पत्र के लिए सरकारी दफ्तरों के चक्कर नहीं काटने होंगे। ई-डिस्ट्रिक्ट पोर्टल पर आई बड़ी अपडेट...</p>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=500" alt="YouTube AI" class="news-img">
+                <div class="news-content">
+                    <span class="news-tag">टेक्नोलॉजी</span>
+                    <div class="news-title">यूट्यूब क्रिएटर्स के लिए खुशखबरी: वीडियो एडिटिंग को आसान बनाने के लिए आए 3 नए AI फीचर्स</div>
+                    <p class="news-desc">अगर आप भी वीडियो बनाते हैं, तो यूट्यूब का यह नया अपडेट आपके बहुत काम आने वाला है। अब चुटकियों में एडिट होंगे शॉर्ट्स और फंकी वीडियो...</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 My Bharat Updates. All Rights Reserved.</p>
+        <p style="font-size: 12px; margin-top: 5px; color: #888;">Designed for Mobile & PC</p>
+    </footer>
+
+</body>
+</html>
